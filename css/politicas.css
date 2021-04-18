@@ -1,0 +1,44 @@
+html, body{
+    margin: 0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+}
+
+.opciones{
+    position: inherit;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#clausulas{
+    list-style: upper-roman;
+    margin: 20px;
+}
+
+#clausulas >li::marker{
+    font-size: 26px;
+    color: #001d72;
+}
+
+#clausulas >li{
+    font-size: 24px;
+}
+
+.contenido{
+    display: block;
+    margin: 20px 15px;
+    padding: 10px;
+}
+
+.lista-interna li{
+    line-height: 1.8rem;
+    margin: 20px 5px;
+}
+
+.lista-interna li::marker{
+    font-size: 18px;
+}

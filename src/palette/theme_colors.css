@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Go-Bike-Colors-1-hex { color: #B0D9D1; }
+.Go-Bike-Colors-2-hex { color: #BDF2E3; }
+.Go-Bike-Colors-3-hex { color: #010D00; }
+.Go-Bike-Colors-4-hex { color: #F2F2F2; }
+.Go-Bike-Colors-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Go-Bike-Colors-1-rgba { color: rgba(176, 217, 209, 1); }
+.Go-Bike-Colors-2-rgba { color: rgba(189, 242, 227, 1); }
+.Go-Bike-Colors-3-rgba { color: rgba(1, 13, 0, 1); }
+.Go-Bike-Colors-4-rgba { color: rgba(242, 242, 242, 1); }
+.Go-Bike-Colors-5-rgba { color: rgba(13, 13, 13, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Go-Bike-Colors-1-hsla { color: hsla(168, 35, 77, 1); }
+.Go-Bike-Colors-2-hsla { color: hsla(163, 67, 84, 1); }
+.Go-Bike-Colors-3-hsla { color: hsla(115, 100, 2, 1); }
+.Go-Bike-Colors-4-hsla { color: hsla(0, 0, 94, 1); }
+.Go-Bike-Colors-5-hsla { color: hsla(0, 0, 5, 1); }

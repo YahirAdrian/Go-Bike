@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse en Go! Bike</title>
+        <link rel="stylesheet" href="css/cabecera.css"/>
+        <link rel="stylesheet" href="css/login.css">
+        <style>
+            #login-a{
+                color: #000;
+                margin-right: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px;
+                font-family: 'Open Sans';
+            }
+
+            #login-a:hover{
+                background-color: #5883faab;
+                border: 1px solid #040404;
+            }
+        </style>
+
+        <link rel="shortcut icon" href="src/logo.jpeg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="brand">
+                <img src="src/logo.jpeg" alt="Go Bike logo"/>
+                <span><a id="logo" href="index.html">Go! Bike</a></span>
+            </div>
+
+            <nav class="opciones">
+                 <a id="login-a" href="login.html">Iniciar sesión</a>
+            </nav>
+
+        </header>
+
+        <section>
+            <h1>Registrate para poder acceder a Go! Bike</h1>
+
+            <form id="formulario" action="php/registro.php" method="post">
+                <h2>Registro</h2>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input class="text" type="text" name="nombre" id="nombre" maxlength="50" required/>
+                </div>
+                
+                <div class="campo">
+                    <label for="apellido">Apellidos:</label>
+                    <input class="text" type="text" name="apellido" id="apellido" maxlength="50" required/>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo:</label>
+                    <input class="text" type="text" name="correo" id="correo" maxlength="50" required/>
+                </div>
+
+                <div class="campo">
+                    <label for="usuario">Nombre de ususario:</label>
+                    <input class="text" type="text" name="usuario" id="usuario" maxlength="50" required/>
+                </div>
+
+                <div class="campo">
+                    <label for="password">Contraseña:</label>
+                    <input class="text" type="password" name="password" id="password" required/>
+                </div>
+
+                <div class="campo checkbox">
+                    <input type="checkbox" name="terminos" id="terminos" required/>
+                    <label for="terminos">He leido y estoy de acuerdo con los <a href="terminos-y-condiciones.html">Terminos y conidciones:</a></label>
+                </div>
+
+                <div class="campo checkbox">
+                    <input type="checkbox" name="politicas" id="politicas" required/>
+                    <label for="politicas">He leido y estoy de acuerdo con la <a href="politica-de-privacidad.html">Politica de privacidad</a></label>
+                </div>
+
+                <input type="submit" id="submit" value="Registrarme" name="submit"/>
+            </form>
+        </section>
+
+        <script src="js/login.js"></script>
+    </body>
+</html>

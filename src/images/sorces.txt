@@ -1,0 +1,26 @@
+bicicleta_estacionada.jpg:
+https://foodandtravel.mx/celebra-el-dia-mundial-de-la-bicicleta-con-estos-destinos-con-ciclopistas/
+
+arfternoon.jpg:
+Imagen de <a href="https://pixabay.com/es/users/dimitrisvetsikas1969-1857980/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2968756">Dimitris Vetsikas</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2968756">Pixabay</a>
+
+silla_bicicleta.jpg:
+Imagen de <a href="https://pixabay.com/es/users/thorstenf-7677369/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4144390">Thorsten Frenzel</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4144390">Pixabay</a>
+
+bicicleta_pasto.jpg:
+Imagen de <a href="https://pixabay.com/es/users/kriemer-932379/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=975813">Kerstin Riemer</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=975813">Pixabay</a>
+
+alquiler_bicicletas:
+Imagen de <a href="https://pixabay.com/es/users/postcardtrip-11490472/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4716440">postcardtrip</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4716440">Pixabay</a>
+
+bicicleta_primera_persona:
+Imagen de <a href="https://pixabay.com/es/users/tookapic-1386459/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=932433">tookapic</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=932433">Pixabay</a>
+
+turistas_centro.jpg:
+https://www.viator.com/es-ES/tours/Cozumel/Cozumel-East-Side-Scenic-Electric-Bike-Tour-Including-Lunch/d632-18293P2
+
+icono facebook:
+<div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+
+icono enlace:
+<div>Iconos diseñados por <a href="https://www.flaticon.es/autores/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>

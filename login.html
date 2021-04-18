@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar sesión</title>
+        <link rel="stylesheet" href="css/cabecera.css"/>
+        <link rel="stylesheet" href="css/login.css">
+        <style>
+            #login-a{
+                color: #000;
+                margin-right: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px;
+                font-family: 'Open Sans';
+            }
+
+            #login-a:hover{
+                background-color: #5883faab;
+                border: 1px solid #040404;
+            }
+        </style>
+
+        <link rel="shortcut icon" href="src/logo.jpeg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="brand">
+                <img src="src/logo.jpeg" alt="Go Bike logo"/>
+                <span><a id="logo" href="index.html">Go! Bike</a></span>
+            </div>
+
+            <nav class="opciones">
+                 <a id="login-a" href="registro.html">Registrarme</a>
+            </nav>
+        </header>
+
+        <section>
+            <h1>Inicia sesión con tu cuenta en Go Bike</h1>
+
+            <form id="formulario" action="php/sesion.php" method="post">
+                <h2>Iniciar sesión</h2>
+                <div class="campo">
+                    <label for="nombre">Nombre de usuario:</label>
+                    <input class="text" type="text" name="usuario" id="nombre" maxlength="50" required/>
+                </div>
+
+                <div class="campo">
+                    <label for="password">Contraseña:</label>
+                    <input class="text" type="password" name="password" id="password" required/>
+                </div>
+
+                <div class="campo checkbox">
+                    <input type="checkbox" name="renember" id="sesion" />
+                    <label for="terminos">Mantener mi sesión iniciada</label>
+                </div>
+                <input type="submit" id="submit" value="Iniciar sesión" name="submit"/>
+            </form>
+        </section>
+    </body>
+</html>
