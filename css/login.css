@@ -11,6 +11,10 @@ html, body{
 
 section{
     font-family: 'Open Sans';
+    background-image: url('../src/images/nuevas/Imagen1.jpg');
+    background-position:100% 100%;
+    background-repeat: no-repeat;
+    background-size: 30%;
 }
 
 #formulario{
@@ -21,6 +25,7 @@ section{
     padding: 20px 10px;
     border: 2px solid #000;
     border-radius: 0.38cm;
+    background-color: #F2F2F2;
 }
 
 #formulario .campo{

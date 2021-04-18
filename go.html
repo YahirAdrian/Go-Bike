@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Go Bike panel</title>
+        <link rel="stylesheet" href="css/home.css"/>
+        <link rel="stylesheet" href="css/cabecera.css"/>
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <link rel="shortcut icon" href="src/logo.jpeg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#9ed2de">
+        <meta name="theme-color" content="#9ed2de"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="brand">
+                <img src="src/logo.jpeg" alt="Go Bike logo"/>
+                <span id="logo">Go Bike</span>
+            </div>
+
+            <nav>
+                <div id="usuario" class="icon">
+                    <span id="una-letra">Y</span>
+                    <span id="nombre"></span>
+                </div>
+            </nav>
+        </header>
+        
+        <section>
+
+            <div class="planes-activos">
+
+            </div>
+            <article id="tarifas">
+                <h1>Tarifas tradicionales Go Bike</h1>
+                <div class="galeria-servicios">
+                    <div id="caja-servicios">
+
+                        <div class="servicio" id="servicio1">
+                            <span class="nombre-servicio">1 - 45 <br> minutos</span>
+                            <p class="descripcion-servicio">Puedes hacer uso de una bicicleta durante 1 minuto hasta 45 minutos </p>
+                            <span class="precio">$10.<span class="centavos">00</span> <span class="moneda">MXN</span></span>
+                        </div>
+    
+                        <div class="servicio" id="servicio2">
+                            <span class="nombre-servicio">46 - 60 <br> minutos</span>
+                            <p class="descripcion-servicio">Puedes hacer uso de una bicicleta durante 46 minutos  hasta 1 hora.</p>
+                            <span class="precio">$13.<span class="centavos">00</span> <span class="moneda">MXN</span></span>
+                        </div>
+    
+                        <div class="servicio" id="servicio3">
+                            <span class="nombre-servicio">61 minutos <br> En adelante  <br>(Hora adicional)</span>
+                            <p class="descripcion-servicio">Puedes hacer uso de una bicicleta por más de una hora. Después de 1 hora se cobrara una tarifa adicional de $45.00 MXN por cada hora extra.</p>
+                            <span class="precio">$45.<span class="centavos">00</span> <span class="moneda">MXN</span></span>
+                        </div>
+    
+                        <div class="servicio" id="servicio4">
+                            <span class="nombre-servicio">Más de 24 horas</span>
+                            <p class="descripcion-servicio">Puedes hacer uso de una bicicleta durante este tiempo. Después de usar por más de 24 horas se cobrará esta tarifa.</p>
+                            <span class="precio">$6,220.<span class="centavos">00</span> <span class="moneda">MXN</span></span>
+                        </div>
+                    </div>
+            </article>
+
+            <article id="planes">
+                <h3 class="titulo-seccion">Planes</h3>
+                 
+                <div class="planes">
+                    <h1>¿Quieres usar <strong>Go! Bike</strong> más segido con mejores tarifas?</h1>
+
+
+                    <span class="texto-informativo" style="line-height: 2.1rem;">Si decides usar Go! Bike frecuentemente, los planes te pueden ayudar a reducir el costo de nuestras tarifas. <br>
+                        ¡Con Go Bike puedes contratar un plan por tiempo determinado a un precio mucho más accesibe! <br>
+                        ¿Te animas a probarlo?
+                    </span>
+                    <div class="card-planes">
+                        <span class="nombre-servicio">Go Day</span>
+                        <p class="descripcion-servicio">Registro de 1 día</p><br><br>
+                        <span class="precio">$110.<span class="centavos">00</span> <span class="moneda">MXN</span></span>
+                    </div>
+                
+                    <div class="card-planes">
+                        <span class="nombre-servicio">Medium Bike</span>
+                        <p class="descripcion-servicio">Registro por 3 días</p><br><br>
+                        <span class="precio">$210.<span class="centavos">00</span> <span class="moneda">MXN</span></span>
+                    </div>
+                
+                    
+                    <div class="card-planes">
+                        <span class="nombre-servicio">Bike Semanal</span>
+                        <p class="descripcion-servicio">Registro por 7 días</p><br><br>
+                        <span class="precio">$345.<span class="centavos">00</span> <span class="moneda">MXN</span></span>
+                    </div>
+                    
+                    
+                    <div class="card-planes">
+                        <span class="nombre-servicio">Go Month</span>
+                        <p class="descripcion-servicio">Registro por 1 mes</p><br><br>
+                        <span class="precio">$470.<span class="centavos">00</span> <span class="moneda">MXN</span></span>
+                    </div>
+                    
+                    <div class="card-planes">
+                        <span class="nombre-servicio">GoGo Bike</span>
+                        <p class="descripcion-servicio">Registro por 1 año</p><br><br>
+                        <span class="precio">$690.<span class="centavos">00</span> <span class="moneda">MXN</span></span>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+
+        <script>
+            const letra = document.querySelector('#una-letra');
+            const spanNombre  = document.querySelector('#nombre');
+            const nombre = sessionStorage.getItem("user");
+
+            spanNombre.textContent = nombre;
+            letra.textContent = nombre.charAt(0);
+
+            document.querySelectorAll('.servicio').forEach(elemento=>{
+                const boton = document.createElement('button');
+                boton.classList.add('boton-comprar');
+                boton.textContent = "Seleccionar";
+                elemento.appendChild(boton);
+            })
+
+            document.querySelectorAll('.card-planes').forEach(elemento=>{
+                const boton = document.createElement('button');
+                boton.classList.add('boton-comprar');
+                boton.textContent = "Seleccionar";
+                elemento.appendChild(boton);
+            })
+        </script>
+    </body>
+</html>
