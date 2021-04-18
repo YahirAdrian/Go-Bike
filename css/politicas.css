@@ -42,3 +42,7 @@ html, body{
 .lista-interna li::marker{
     font-size: 18px;
 }
+
+#letras{
+    list-style: lower-latin;
+}
