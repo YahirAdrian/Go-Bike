@@ -43,6 +43,16 @@
     margin-bottom: 70px;
 }
 
+#tarifas{
+    background-image: url('../src/images/bcicleta_pasto.jpg');
+}
+
+#tarifas h1{
+    margin: 0;
+    font-size: 30px;
+    color: #F2F2F2;
+}
+
 @keyframes animarBicicleta{
     from{
        background-position: bottom 150%;
