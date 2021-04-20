@@ -11,12 +11,16 @@ html, body{
 
 section{
     font-family: 'Open Sans';
-    background-image: url('../src/images/nuevas/Imagen1.jpg');
-    background-position:100% 100%;
+    background: url('../src/images/afternoon.jpg');
     background-repeat: no-repeat;
-    background-size: 30%;
+    background-size: cover;
+    
 }
 
+section h1{
+    margin: 0;
+    color: #F2F2F2;
+}
 #formulario{
     width: 50%;
     max-width: 600px;
@@ -25,7 +29,7 @@ section{
     padding: 20px 10px;
     border: 2px solid #000;
     border-radius: 0.38cm;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2e3;
 }
 
 #formulario .campo{
@@ -81,4 +85,10 @@ section{
     font-size: 14px;
     bottom: -5px;
     right: 0;
+}
+
+@media (max-width: 500px){
+    section{
+        background-image: url('../src/images/bicicleta_primera_persona.jpg');
+    }
 }

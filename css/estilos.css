@@ -39,13 +39,13 @@ article, #banner, #acerca-de{
 
 #banner #info-banner{
     width: 50%;
-    height: 50%;
+    height: fit-content;
     position: absolute;
     top: 80px;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #f2f2f283;
+    background-color: #f2f2f2be;
     margin: auto;
     line-height: 2.3rem;
     text-align: center;
@@ -64,7 +64,7 @@ article, #banner, #acerca-de{
 
 /* About */
 #acerca-de{
-    background-color: #F2F2F2;
+    background-image: url('../src/images/puesta_de_sol.jpg');
     margin-top: 100vh;
 }
 
@@ -73,8 +73,10 @@ article, #banner, #acerca-de{
 }
 
 .texto-informativo{
+    /* margin: 5% 0; */
     padding: 10px 0px 10px 20px;
     font-size: 18px;
+    background-color: #f2f2f2f1;
 }
 
 /* Servicios */
@@ -116,7 +118,9 @@ article, #banner, #acerca-de{
 /* Servicios */
 .servicio{
     width: fit-content;
-    height: 300px;
+    height: 350px;
+    min-height: fit-content;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
@@ -201,7 +205,8 @@ article, #banner, #acerca-de{
 
 .card-planes{
     width: 200px;
-    height: 30vh;
+    height: max-content;
+    min-height: 30vh;
     margin: 25px;
     padding: 10px;
     border: 2px solid #464646;
@@ -223,6 +228,7 @@ article, #banner, #acerca-de{
 
 #ubicacion{
     background-color: #F2F2F2;
+    background-image: url('../src/images/afternoon.jpg');
     /* position: absolute; */
 }
 
@@ -310,12 +316,16 @@ footer a:hover{
     width: 50%;
     background-color: #5882FA;
     border: 1.5px solid #464646;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #000;
     text-decoration: none;
     margin-top: 20px;
     margin-bottom: 20px;
     margin: auto;
+}
+
+.boton-comprar:hover{
+    background-color: teal;
 }
 
 #bicicleta6{

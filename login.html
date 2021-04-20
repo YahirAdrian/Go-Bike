@@ -21,6 +21,21 @@
                 background-color: #5883faab;
                 border: 1px solid #040404;
             }
+
+            #formulario{
+                min-height: 70%;
+            }
+
+            section{
+                height: -webkit-fill-available;
+            }
+
+            #submit{
+                position: relative;
+                bottom: 10px;
+                width: 60%;
+                left: 20%;
+            }
         </style>
 
         <link rel="shortcut icon" href="src/logo.jpeg" type="image/x-icon">
@@ -46,7 +61,7 @@
         <section>
             <h1>Inicia sesión con tu cuenta en Go Bike</h1>
 
-            <form id="formulario" action="" method="post">
+            <form id="formulario">
                 <h2>Iniciar sesión</h2>
                 <div class="campo">
                     <label for="nombre">Nombre de usuario:</label>
@@ -62,13 +77,28 @@
                     <input type="checkbox" name="renember" id="sesion" />
                     <label for="terminos">Mantener mi sesión iniciada</label>
                 </div>
-                <a href="go.html"><input type="submit" id="submit" value="Iniciar sesión" name="submit"/></a>
+                <a href="go.html" style="color: #040404; text-align: center;" id="submit">Iniciar sesion</a>
             </form>
         </section>
 
         <script>
-            document.querySelector('#formulario').addEventListener('submit', ()=>{
-                sessionStorage.setItem("user", document.querySelector('#nombre').value);
+            document.querySelector('#submit').addEventListener('click', (e)=>{
+                const nombre = document.querySelector('#nombre').value;
+                const contrasena = document.querySelector('#password').value;
+                const formulario = document.querySelector('#formulario');
+
+                if(nombre && contrasena){
+                    sessionStorage.setItem("user", document.querySelector('#nombre').value);
+                }else{
+                    e.preventDefault();
+                    const alerta = document.createElement('p');
+                    alerta.textContent = "Debes rellenar todos los campos";
+                    alerta.style = "color: red";
+                    formulario.appendChild(alerta);
+                    setTimeout(()=>{
+                        alerta.remove();
+                    }, 3500)
+                }
             })
         </script>
     </body>

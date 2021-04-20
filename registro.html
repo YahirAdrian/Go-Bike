@@ -47,7 +47,7 @@
         <section>
             <h1>Registrate para poder acceder a Go! Bike</h1>
 
-            <form id="formulario" action="" method="post">
+            <form id="formulario">
                 <h2>Registro</h2>
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
@@ -84,10 +84,34 @@
                     <label for="politicas">He leido y estoy de acuerdo con la <a href="politica-de-privacidad.html">Politica de privacidad</a></label>
                 </div>
 
-                <a href="login.html"><input type="submit" id="submit" value="Registrarme" name="submit"/></a>
+                <a href="login.html" style="color:#040404; text-align: center;" id="submit">Registrarme</a>
             </form>
         </section>
+        
+        <script>
+            document.querySelector('#submit').addEventListener('click', (e)=>{
+                // e.preventDefault();
+                // debugger;
+                const nombre = document.querySelector('#nombre').value;
+                const apellidos = document.querySelector('#apellido').value;
+                const correo = document.querySelector('#correo').value;
+                const usuario = document.querySelector('#usuario').value;
+                const contrasena = document.querySelector('#password').value;
+                const formulario = document.querySelector('#formulario');
 
-        <script src="js/login.js"></script>
+                if(nombre && apellidos && correo && usuario && contrasena){
+                    sessionStorage.setItem("userRegistered", document.querySelector('#nombre').value);
+                }else{
+                    e.preventDefault();
+                    const alerta = document.createElement('p');
+                    alerta.textContent = "Debes rellenar todos los campos";
+                    alerta.style = "color: red";
+                    formulario.appendChild(alerta);
+                    setTimeout(()=>{
+                        alerta.remove();
+                    }, 3500)
+                }
+            })
+        </script>
     </body>
 </html>
